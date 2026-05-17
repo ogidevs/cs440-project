@@ -1,0 +1,24 @@
+[project]
+name = "cs440-real-estate-analytics"
+version = "0.1.0"
+description = "Data analytics and machine learning project for clustering and predicting premium real estate properties in Belgrade."
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Ognjen Milosevic", email = "ognjen.milosevic.5375@metropolitan.ac.rs" }
+]
+dependencies = [
+    "matplotlib>=3.10.9",
+    "mlxtend>=0.24.0",
+    "numpy>=2.4.5",
+    "pandas>=3.0.3",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = ["main.py"]
